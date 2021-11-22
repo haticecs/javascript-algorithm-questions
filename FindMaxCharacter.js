@@ -22,9 +22,9 @@ const maxCharacter = (str) => {
 
   const max = Object.keys(hashMap).reduce((a, k) => Math.max(a, hashMap[k]), 0);
 
-  const resultMap = Object.keys(hashMap).filter((k) => hashMap[k] === max);
+  const resultArr = Object.keys(hashMap).filter((k) => hashMap[k] === max);
 
-  return resultMap;
+  return resultArr;
 };
 
 console.log(maxCharacter("javascript"));
